@@ -1,0 +1,27 @@
+{
+  "name": "@openclaw/tcl-tv-bot",
+  "version": "0.1.0",
+  "description": "OpenClaw TCL TV Bot channel plugin — custom bot for TCL TV integration",
+  "type": "module",
+  "dependencies": {
+    "ws": "^8.19.0"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.2.0"
+  },
+  "devDependencies": {
+    "openclaw": "workspace:*"
+  },
+  "openclaw": {
+    "extensions": ["./index.ts"],
+    "channel": {
+      "id": "tcl-tv-bot",
+      "label": "TCL TV Bot",
+      "selectionLabel": "TCL TV Bot",
+      "docsPath": "/channels/tcl-tv-bot",
+      "blurb": "Custom bot channel for TCL TV integration.",
+      "aliases": ["tcltv", "tcl-tv"],
+      "order": 95
+    }
+  }
+}

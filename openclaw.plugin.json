@@ -1,0 +1,9 @@
+{
+  "id": "tcl-tv-bot",
+  "channels": ["tcl-tv-bot"],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}
