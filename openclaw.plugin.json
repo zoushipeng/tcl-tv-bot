@@ -5,5 +5,36 @@
     "type": "object",
     "additionalProperties": false,
     "properties": {}
+  },
+  
+  "// 新增：告诉系统去插件目录下的 /skills 找 Skill": "",
+  "load": {
+    "extraDirs": ["./skills"]
+  },
+
+  "// 新增：定义插件本身的设置项（让用户在 Web 界面输入）": "",
+  "config": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "appId": { "type": "string", "title": "应用 AppID" },
+        "appKey": { "type": "string", "title": "应用 AppKey" }
+      }
+    }
+  },
+
+  "// 新增：自动将插件的配置同步给捆绑的 Skill": "",
+  "configPatch": {
+    "skills": {
+      "entries": {
+        "tv-voice-control": {
+          "enabled": true,
+          "config": {
+            "appId": "{{plugin.config.appId}}",
+            "appKey": "{{plugin.config.appKey}}"
+          }
+        }
+      }
+    }
   }
 }
