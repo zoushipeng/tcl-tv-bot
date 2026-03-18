@@ -28,10 +28,10 @@ user-invocable: true
 
 以下参数通过 **OpenClaw 配置**注入，无需用户传递：
 
-| 环境变量 | 说明 | 配置方式 |
-|----------|------|----------|
-| `TCL_APPID` | 应用 ID | `~/.openclaw/openclaw.json` 中配置 |
-| `TCL_APPKEY` | 应用 Key | `~/.openclaw/openclaw.json` 中配置 |
+| 环境变量 | 说明 | 配置方式 | 备注｜
+|----------|------|----------|-----------｜
+| `TCL_APPID` | 应用 ID | `~/.openclaw/openclaw.json` 中配置 | 与tcl-tv-bot 插件的appId一致｜
+| `TCL_APPKEY` | 应用 Key | `~/.openclaw/openclaw.json` 中配置 |与tcl-tv-bot 插件的appKey一致｜
 
 
 ## Utility Scripts
