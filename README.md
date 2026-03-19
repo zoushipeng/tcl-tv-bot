@@ -50,7 +50,7 @@ Add to `~/.openclaw/openclaw.json`:
           appId: "appId1",
           appKey: "your-app-key-1",
           token: "optional-bearer-token",
-          wsUrl: "wss://your-tv-bot.example.com/ws",
+          wsUrl: "wss://tcl-tv-bot-t.test.leiniao.com/tcl-tv-bot/websocket",
           enabled: true,
         },
         "appId2": {
@@ -58,7 +58,7 @@ Add to `~/.openclaw/openclaw.json`:
           appId: "appId2",
           appKey: "your-app-key-2",
           token: "optional-bearer-token",
-          wsUrl: "wss://your-tv-bot.example.com/ws",
+          wsUrl: "wss://tcl-tv-bot-t.test.leiniao.com/tcl-tv-bot/websocket",
           enabled: true,
         },
       },
